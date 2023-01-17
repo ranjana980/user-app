@@ -1,3 +1,8 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
 .App {
   text-align: center;
 }
@@ -5,6 +10,10 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.user-details{
+  /* box-shadow: 4px 4px 4px 4px white; */
+  border-radius: 10px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
