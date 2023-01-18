@@ -66,32 +66,32 @@ export default function UserPage() {
                   <div className='flex justify-center  '>
                     <p>{FormObj.name}</p>
                   </div>
-                  <div className='flex justify-center  '>
+                  <div className='flex justify-center text-sm '>
                     <p className='text-gray-500 '>UserName: </p>
                     <p className='ml-2'>{FormObj.username}</p>
                   </div>
-                  <div className='flex justify-center p-2 text-center'>
+                  <div className='flex justify-center p-2 text-center text-sm '>
                     <p className='text-gray-500 '>email: </p>
                     <p className='ml-2'>{FormObj.email}</p>
                   </div>
-                  <div className='flex justify-center p-2 text-center'>
+                  <div className='flex justify-center p-2 text-center text-sm '>
                     <p className='text-gray-500 '>phoneNumber: </p>
                     <p className='ml-2'>{FormObj.phone}</p>
                   </div>
-                  <div className='flex justify-center p-2 text-center'>
+                  <div className='flex justify-center p-2 text-center text-sm '>
                     <p className='text-gray-500 '>website: </p>
                     <p className='ml-2'>{FormObj.website}</p>
                   </div>
                   <hr></hr>
-                  <div className='flex justify-center p-2 text-center'>
+                  <div className='flex justify-center p-2 text-center text-sm '>
                     <p className='text-gray-500 '>Company Name: </p>
                     <p className='ml-2'>{FormObj.company.name}</p>
                   </div>
-                  <div className='flex justify-center p-2 text-center'>
+                  <div className='flex justify-center p-2 text-center text-sm '>
                     <p className='text-gray-500 '>catchPhrase: </p>
                     <p className='ml-2'>{FormObj.company.catchPhrase}</p>
                   </div>
-                  <div className='flex justify-center p-2 text-center'>
+                  <div className='flex justify-center p-2 text-center text-sm '>
                     <p className='text-gray-500 '>bs: </p>
                     <p className='ml-2'>{FormObj.company.bs}</p>
                   </div>
@@ -102,25 +102,25 @@ export default function UserPage() {
               <div>
                 <p className='text-gray-500 '>Address: </p>
                 <div className='ml-2'>
-                  <div className='flex justify-start   text-center'>
+                  <div className='flex justify-start   text-center text-sm '>
                     <p className='text-gray-500 '>Street: </p>
                     <p className='ml-2'>{FormObj.address.street}</p>
                   </div>
-                  <div className='flex justify-start  text-center'>
+                  <div className='flex justify-start  text-center text-sm '>
                     <p className='text-gray-500 '>Suite: </p>
                     <p className='ml-2'>{FormObj.address.suite}</p>
                   </div>
-                  <div className='flex justify-start  text-center'>
+                  <div className='flex justify-start  text-center text-sm '>
                     <p className='text-gray-500 '>City: </p>
                     <p className='ml-2'>{FormObj.address.city}</p>
                   </div>
-                  <div className='flex justify-start  text-center'>
+                  <div className='flex justify-start  text-center text-sm '>
                     <p className='text-gray-500 '>Zipcode: </p>
                     <p className='ml-2'>{FormObj.address.zipcode}</p>
                   </div>
                 </div>
                 <img src="https://user-images.githubusercontent.com/107462720/210083129-f7d59313-06e0-4e39-bffd-107793a6da12.jpg" className='mt-5 p-5' />
-                <div className='flex justify-end'>
+                <div className='flex justify-end text-sm '>
                   <div className='flex text-sm'>
                     <p className='text-gray-500 '>Long: </p>
                     <p className='ml-1'>{FormObj.address.geo.lng}</p>
