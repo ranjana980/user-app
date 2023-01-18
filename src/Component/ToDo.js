@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import SideNav from './SideNav'
 export default function ToDo() {
     const navigate=useNavigate()
-    const { Formlist } = useSelector((state) => state.FormDataReducer);
+    const { FormObj } = useSelector((state) => state.FormDataReducer);
     const [display, setDisplay] = useState(false)
     const handleLogout=()=>{
         navigate('/')
@@ -23,22 +23,22 @@ export default function ToDo() {
                     <div className='flex justify-between w-11/12 p-3 cursor-pointer' onClick={() => setDisplay(!display)}>
                         <span className='text-lg'>ToDo</span>
                         <div className='flex ' >
-                            <img src={Formlist.profilepicture} className="h-12 w-12 rounded-full" />
-                            <h5 className='p-2'>{Formlist.username}</h5>
+                            <img src={FormObj.profilepicture} className="h-12 w-12 rounded-full" />
+                            <h5 className='p-2'>{FormObj.username}</h5>
                             {display ? <div className='absolute flex justify-center top-20 right-0 z-10 mt-2 w-[20vw]  rounded-md bg-white shadow-2xl ml-3'>
                                 <div className=''>
                                     <div >
                                         <div className=''>
-                                            <img src={Formlist.profilepicture} className="h-32 w-32 rounded-full" />
-                                            <p>{Formlist.name}</p>
-                                            <p className='text-sm text-gray-400'>{Formlist.email}</p>
+                                            <img src={FormObj.profilepicture} className="h-32 w-32 rounded-full" />
+                                            <p>{FormObj.name}</p>
+                                            <p className='text-sm text-gray-400'>{FormObj.email}</p>
                                         </div>
 
                                     </div>
 
                                     <div className='flex w-56 border-b-2 border-t-2 border-gray-300 ' onClick={handleProfile}>
-                                        <img src={Formlist.profilepicture} className="h-10 w-10 rounded-full" />
-                                        <p>{Formlist.name}</p>
+                                        <img src={FormObj.profilepicture} className="h-10 w-10 rounded-full" />
+                                        <p>{FormObj.name}</p>
                                     </div>
                                     <div className='flex justify-center mb-2 mt-2'>
                                         <button className='bg-orange-400 text-white text-md rounded-md p-1' onClick={handleLogout}>SignOut</button>

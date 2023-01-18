@@ -8,16 +8,25 @@ export default function MainPage() {
 
     const handleView = (item) => {
         dispatch({ type: 'userData', payload: item })
-        navigate('/UserPage')
+        data.users.forEach((item1) => {
+            if (item.id != item1.id) {
+                dispatch({ type: 'userList', payload: item1 })
+            }
 
+        })
+        navigate('/UserPage')
     }
     useEffect(() => {
-        console.log(data, 'usersss')
 
     }, [])
     return (
-        <div className='bg-gradient-to-b from-indigo-500'>
-            <div className=" rounded w-full container flex justify-center    ">
+        <div className=''>
+            <div className='flex gap-0'>
+                <div className=' h-[15rem] w-[37rem]  rounded-br-[200px] bg-indigo-500 border-b-[20px]  border-br-indigo-500'></div>
+                <div className=' h-96 w-[34rem]  bg-indigo-500 '></div>
+                <div className=' h-96 w-[55rem] rounded-bl-[150px] bg-indigo-500 border-b-[20px]  border-br-indigo-500'></div>
+            </div>
+            <div className="absolute top-0 rounded w-full container flex justify-center    ">
                 <div className="'h-auto rounded-[20px] bg-gray-100 w-2/5   shadow-2xl mt-5">
                     <div className=" text-xl mb-2 p-3 text-center">Select an account</div>
                     <div className='h-3/4 overflow-y-scroll overflow-x-hidden bg-white'>
